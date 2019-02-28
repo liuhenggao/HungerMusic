@@ -1,0 +1,164 @@
+section{
+    height: 100%;
+    overflow: hidden;
+}
+#page-music .layout{
+    height: calc(100% - 24vh);
+    padding-top: 12vh; 
+    display: flex;
+    justify-content: center;
+}
+#page-music footer{
+    height: 24vh;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px -0.25vh -0.25vh -0.25vh;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    bottom: 0;
+    right: 0;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}
+.bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+figure{
+    height: 46vh;
+    width: 46vh;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+}
+.layout .detail{
+    color: aliceblue;
+    margin-left: -10vw;
+}
+.layout .aside{
+    margin-right: 15vw;
+}
+.layout .detail .sign{
+    background: blue;
+    padding: 0.5vh 1.5vh 0.5vh 1.5vh;
+    border-radius: 1px;
+    font-size: 1vh;
+}
+.layout .detail .title{
+    width: 600px;
+    margin-top: 3vh;
+    font-size: 6vh;
+}
+.icon-left .iconfont{
+    font-size: 5vh;
+    color: rgba(255,255,255,0.4);
+}
+
+.icon-left .iconfont:hover{
+    cursor: pointer;
+}
+
+.icon-right .iconfont{
+    margin-top: 10vh;
+    font-size: 3vh;
+}
+.detail .icon-right{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+.aside .icon-left{
+    width: 46vh;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.detail .area-bar .bar{
+    height: .8vh;
+    width: 42vw;
+    display: inline-block;
+    margin-top: 10vh;
+    border-radius: .5vh;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+.detail .area-bar .bar-progress{
+    width: 0;
+    height: .8vh;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: width .8s;
+}
+.detail .lyric{
+    margin-top: 15px;
+    color: rgb(235, 225, 225);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    position: relative;
+}
+footer .music-list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer .music-list{
+    margin-top: 10px;
+    left: 0;
+    position: absolute;
+}
+footer li.active{
+    box-shadow: 0 0 1vh 1vh rgba(255, 255, 255, 0.5);
+}
+footer .music-list .item{
+    float: left;
+    margin:5px 4vh;
+    text-align: center;
+}
+footer .music-list .item img{
+    width: 20vh;
+    height: 16vh;
+}
+footer .music-list .item .title{
+    display: block;
+    color: azure;
+}
+footer .box{
+    position: relative;
+    height: 150px;
+    margin: 0 10vw;
+    overflow: hidden;
+}
+footer .iconfont{
+    opacity: 0.1;
+    position: absolute;
+    font-size: 10vh;
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+footer .iconfont:hover{
+    opacity: 0.6;
+    color: #fff;
+    cursor: pointer;
+}
+footer .box .music-list li:hover{
+    box-shadow: 0 0 .5vh .5vh rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+footer .icon-back{
+    left: 7vw;
+}
+footer .icon-next{
+    left: 93vw;
+}
